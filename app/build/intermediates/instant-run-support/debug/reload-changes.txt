@@ -1,0 +1,12 @@
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/MyCSVWriterCell$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/BuildConfig$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/Home$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/TrackService$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/SmsListener$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/com/android/tools/fd/runtime/AppPatchesLoaderImpl.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/MyCSVReader$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/TeleListener$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/DataListener$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/MmsListener$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/SMSObserver$1$override.class
+CHANGED,/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/transforms/instantRun/debug/folders/4000/5/enhanced/de/henning_net/android/funkzellenortung/SMSObserver$override.class

@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/ic_launcher.png",
+        "source": "/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/src/main/res/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/build/intermediates/res/merged/debug/mipmap-hdpi-v4/reload_cc0.png",
+        "source": "/home/kralle/AndroidStudioProjects/FunkzellenOrtung/app/src/main/res/mipmap-hdpi/reload_cc0.png"
+    }
+]
