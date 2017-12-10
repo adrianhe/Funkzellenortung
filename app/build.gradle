@@ -1,15 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "21.0.0"
+    compileSdkVersion 27
 
     defaultConfig {
         applicationId "de.henning_net.android.funkzellenortung"
         minSdkVersion 16
-        targetSdkVersion 22
-        versionCode 14
-        versionName "0.9"
+        targetSdkVersion 27
+        versionCode 15
+        versionName "1.1"
     }
     buildTypes {
         release {
@@ -22,8 +21,8 @@ android {
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     testCompile 'junit:junit:4.12'
-    compile 'com.android.support:appcompat-v7:23.2.1'
-    compile 'com.android.support:design:23.2.1'
+    compile 'com.android.support:appcompat-v7:27.0.2'
+    compile 'com.android.support:design:27.0.2'
+    compile 'com.opencsv:opencsv:4.1'
 //    compile 'com.android.volley:volley:1.0.0' Nur für Koordinaten
-    compile files('/home/kralle/AndroidStudioProjects/FunkzellenOrtung/opencsv-3.7.jar')
 }

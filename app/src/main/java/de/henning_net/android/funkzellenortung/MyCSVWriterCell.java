@@ -11,7 +11,10 @@ package de.henning_net.android.funkzellenortung;
  */
 
 import android.content.Context;
+import android.content.pm.PackageManager;
+import android.os.Build;
 import android.provider.Settings;
+import android.support.v4.content.ContextCompat;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
 import android.text.TextUtils;
@@ -47,27 +50,41 @@ public class MyCSVWriterCell {
     }
 
     public void getNetwork(){
-        TelephonyManager tm = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-        String networkOperator = "";
-        if (tm.getPhoneType() == TelephonyManager.PHONE_TYPE_GSM) { // Netzwerk Typ auf GSM prüfen. Keine CDMA Unterstützung
-            networkOperator = tm.getNetworkOperator(); // Infos über Netzbetreiber holen
+
+
+        if ( Build.VERSION.SDK_INT >= 23 &&
+                ContextCompat.checkSelfPermission( mContext, android.Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+            return  ;
         }
-        //MCC und MNC rausfiltern
-        if (!TextUtils.isEmpty(networkOperator)) {
-            mcc = networkOperator.substring(0, 3);
-            mnc = networkOperator.substring(3);
+
+        try {
+
+            TelephonyManager tm = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
+            String networkOperator = "";
+            if (tm.getPhoneType() == TelephonyManager.PHONE_TYPE_GSM) { // Netzwerk Typ auf GSM prüfen. Keine CDMA Unterstützung
+                networkOperator = tm.getNetworkOperator(); // Infos über Netzbetreiber holen
+            }
+            //MCC und MNC rausfiltern
+            if (!TextUtils.isEmpty(networkOperator)) {
+                mcc = networkOperator.substring(0, 3);
+                mnc = networkOperator.substring(3);
+            } else {
+                mcc = "Unbekannt";
+                mnc = "Unbekannt";
+            }
+            //CellID und LAC holen uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"
+            GsmCellLocation cell = (GsmCellLocation) tm.getCellLocation();
+            if (cell != null) {
+                cellID = Integer.toString(cell.getCid());
+                lac = Integer.toString(cell.getLac());
+            } else {
+                cellID = "ERROR";
+                lac = "ERROR";
+            }
         }
-        else {
-            mcc = "Unbekannt";
-            mnc = "Unbekannt";
-        }
-        //CellID und LAC holen
-        GsmCellLocation cell = (GsmCellLocation) tm.getCellLocation();
-        if (cell != null) {
-            cellID = Integer.toString(cell.getCid());
-            lac = Integer.toString(cell.getLac());
-        }
-        else {
+        catch(Exception ex) {
+            mcc = "No Permission";
+            mnc = "No Permission";
             cellID = "ERROR";
             lac = "ERROR";
         }
@@ -79,28 +96,22 @@ public class MyCSVWriterCell {
     }
 
     public void writeToFile() throws IOException {
-        // Verzeichnis und Datei bestimmen
-        String id = Settings.Secure.getString(mContext.getContentResolver(), Settings.Secure.ANDROID_ID); // einzigartiger aber beständiger Dateiname
-        id = id.substring(0,5); // Name auf 5 Zeichen kürzen
-        String baseDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
-        String dir = "/Funkzellenortung";
-        File newDir=new File(baseDir+dir);
-        newDir.mkdirs();
-        String fileName = "Verbindungen_"+id+".csv"; // Eindeutiger Dateiname im Wurzelverzeichnis
-        String filePath = baseDir + dir + File.separator + fileName;
-        File file = new File(filePath );
-        CSVWriter writer;
-        if(file.exists() && !file.isDirectory()){  //Datei existiert bereits
-            java.io.FileWriter myFileWriter = new java.io.FileWriter(filePath, true);
-            writer = new CSVWriter(myFileWriter, ',', CSVWriter.NO_QUOTE_CHARACTER); // Komma trennt Dateieinträge
-        }
-        else { // Datei wird erstellt
-            writer = new CSVWriter(new java.io.FileWriter(filePath), ',', CSVWriter.NO_QUOTE_CHARACTER); // Komma trennt Dateieinträge
-            String[] header = {"Datum und Uhrzeit", "Dienst", "Richtung", "MCC", "MNC", "LAC", "CellID"};
-            writer.writeNext(header); // Schreibe Header der Datei
-        }
-        String[] data = {time, service, type, mcc, mnc, lac, cellID};
-        writer.writeNext(data); // Schreibe alle Angaben in die Datei
-        writer.close();
+
+            // Verzeichnis und Datei bestimmen
+            String filePath = mContext.getSharedPreferences("settings", 0).getString("filepath",null);
+
+            File file = new File(filePath);
+            CSVWriter writer;
+            if (file.exists() && !file.isDirectory()) {  //Datei existiert bereits
+                java.io.FileWriter myFileWriter = new java.io.FileWriter(filePath, true);
+                writer = new CSVWriter(myFileWriter, ',', CSVWriter.NO_QUOTE_CHARACTER); // Komma trennt Dateieinträge
+            } else { // Datei wird erstellt
+                writer = new CSVWriter(new java.io.FileWriter(filePath), ',', CSVWriter.NO_QUOTE_CHARACTER); // Komma trennt Dateieinträge
+                String[] header = {"Datum und Uhrzeit", "Dienst", "Richtung", "MCC", "MNC", "LAC", "CellID"};
+                writer.writeNext(header); // Schreibe Header der Datei
+            }
+            String[] data = {time, service, type, mcc, mnc, lac, cellID};
+            writer.writeNext(data); // Schreibe alle Angaben in die Datei
+            writer.close();
     }
 }

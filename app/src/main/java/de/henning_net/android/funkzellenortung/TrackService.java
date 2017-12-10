@@ -15,17 +15,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.SharedPreferences;
+import android.content.pm.PackageManager;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Handler;
 import android.os.IBinder;
+import android.support.v4.content.ContextCompat;
 import android.telephony.PhoneStateListener;
 import android.telephony.TelephonyManager;
+
+import java.io.File;
+import java.util.UUID;
 
 public class TrackService extends Service {
 
     private SMSObserver co;
     private SmsListener mySmsListener;
-    private MmsListener myMmsListener;
+    //private MmsListener myMmsListener;
     private TelephonyManager tm;
     private TelephonyManager tm2;
     private TeleListener myTeleListener;
@@ -35,12 +41,13 @@ public class TrackService extends Service {
         SharedPreferences settings = getSharedPreferences("settings", 0);
         SharedPreferences.Editor editor = settings.edit();
         editor.putBoolean("running", true);
-        editor.commit();
+        editor.apply();
 
-        startSMSlisten();
-        //  startMMSlisten(); // Keine Unterstützung für MMS Überwachung
-        startCallListen();
-        startMobileDataListen();
+
+            startSMSlisten();
+            //  startMMSlisten(); // Keine Unterstützung für MMS Überwachung
+            startCallListen();
+            startMobileDataListen();
     }
 
     public int onStartCommand(Intent intent, int flags, int startId) {
@@ -52,14 +59,17 @@ public class TrackService extends Service {
     }
 
     public void onDestroy() { // Beende die Erfassung von SMS, Telefonie und Mobilen Daten
-        stopSMSlisten();
-        // stopMMSlisten(); // Keine Unterstützung für MMS Überwachung
-        stopCallListen();
-        stopMobileDataListen();
-        SharedPreferences settings = getSharedPreferences("settings", 0);
-        SharedPreferences.Editor editor = settings.edit();
+        try {
+            stopSMSlisten();
+            // stopMMSlisten(); // Keine Unterstützung für MMS Überwachung
+            stopCallListen();
+            stopMobileDataListen();
+        }
+        catch (Exception ex) {}
+            SharedPreferences settings = getSharedPreferences("settings", 0);
+            SharedPreferences.Editor editor = settings.edit();
         editor.putBoolean("running", false);
-        editor.commit();
+        editor.apply();
     }
 
     public void startSMSlisten(){ // starte das Erfassen von SMS
@@ -69,12 +79,11 @@ public class TrackService extends Service {
         filter.addAction("android.provider.Telephony.SMS_RECEIVED"); // SMS
         filter.addAction("android.provider.Telephony.SMS_CB_RECEIVED"); // Funkzellen Broadcast SMS
         filter.addAction("android.provider.Telephony.DATA_SMS_RECEIVED"); // Daten SMS
-        filter.addAction("android.provider.Telephony.SMS_EMERGENCY_CB_RECEIVED"); // Notfall SMS
         registerReceiver(mySmsListener, filter);
 
         //ausgehende SMS
         co = new SMSObserver(new Handler(), getApplicationContext());
-        getApplicationContext().getContentResolver().registerContentObserver(
+        this.getContentResolver().registerContentObserver(
                 Uri.parse("content://sms/"), true, co); // Überwache Änderungen im SMS Speicher
     }
 
@@ -83,7 +92,9 @@ public class TrackService extends Service {
         unregisterReceiver(this.mySmsListener);
 
         //ausgehende SMS
-        getApplicationContext().getContentResolver().unregisterContentObserver(co);
+        if (co != null) {
+            this.getContentResolver().unregisterContentObserver(co);
+        }
 
     }
     /* KEINE UNTERSTÜTZUNG FÜR MMS ERFASSUNG
@@ -110,7 +121,6 @@ public class TrackService extends Service {
     */
 
     public void startCallListen(){ // starte das Erfassen von Anrufen
-        System.out.println("starte das Erfassen von Anrufen");
         tm = (TelephonyManager) getSystemService(Context.TELEPHONY_SERVICE);
         myTeleListener = new TeleListener(getApplicationContext());
         tm.listen(myTeleListener, PhoneStateListener.LISTEN_CALL_STATE);

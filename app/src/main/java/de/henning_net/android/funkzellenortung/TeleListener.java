@@ -31,7 +31,6 @@ public class TeleListener extends PhoneStateListener {
         switch (state) {
             case TelephonyManager.CALL_STATE_IDLE: // Keine Telefonverbindung
                     myState = 0;
-                System.out.println("idle");
                     break;
             case TelephonyManager.CALL_STATE_OFFHOOK: // Aktives Gespräch
                     if (!(myState == 1)){ // Nur bei ausgehenden Telefonaten kein vorheriges Klingeln
@@ -44,7 +43,6 @@ public class TeleListener extends PhoneStateListener {
                     MyCSVWriterCell newWriter = new MyCSVWriterCell(mContext, tel, "eingehend");
                     newWriter.start();
                     myState = 1;
-                System.out.println("ringing");
                     break;
             default:
                     break;

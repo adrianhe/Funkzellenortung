@@ -26,8 +26,8 @@ public class SmsListener extends BroadcastReceiver {
     /* Wenn eine Aktion des Filters ausgeführt wird, wird gecheckt,
     ob es sich um eine eingehende SMS o.ä. handelt.*/
     public void onReceive(Context context, Intent intent) {
-        if (Telephony.Sms.Intents.SMS_RECEIVED_ACTION.equals(intent.getAction()) || Telephony.Sms.Intents.SMS_CB_RECEIVED_ACTION.equals(intent.getAction()) || Telephony.Sms.Intents.DATA_SMS_RECEIVED_ACTION.equals(intent.getAction()) ||Telephony.Sms.Intents.SMS_EMERGENCY_CB_RECEIVED_ACTION.equals(intent.getAction())) {
-            MyCSVWriterCell newWriter = new MyCSVWriterCell(mContext, sms, "eingehend");
+        if (Telephony.Sms.Intents.SMS_RECEIVED_ACTION.equals(intent.getAction()) || Telephony.Sms.Intents.SMS_CB_RECEIVED_ACTION.equals(intent.getAction()) || Telephony.Sms.Intents.DATA_SMS_RECEIVED_ACTION.equals(intent.getAction())) {
+    MyCSVWriterCell newWriter = new MyCSVWriterCell(mContext, sms, "eingehend");
             newWriter.start();
         }
     }

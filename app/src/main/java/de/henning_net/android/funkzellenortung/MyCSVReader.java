@@ -13,7 +13,6 @@ package de.henning_net.android.funkzellenortung;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.provider.Settings;
 import android.webkit.MimeTypeMap;
 import com.opencsv.CSVReader;
 import com.opencsv.CSVWriter;
@@ -24,42 +23,37 @@ import java.io.IOException;
 public class MyCSVReader {
     private Context mContext;
     private String filePath;
-    private String baseDir;
-    private String dir;
-    private String fileName;
 
     public String getPath(){
-        return baseDir+dir;
+        return mContext.getSharedPreferences("settings", 0).getString("dir",null);
     }
 
     public String getFilename(){
-        return fileName;
+        return mContext.getSharedPreferences("settings", 0).getString("file",null);
     }
 
 
     public MyCSVReader(Context mContext){
         this.mContext = mContext;
-        String id = Settings.Secure.getString(mContext.getContentResolver(), Settings.Secure.ANDROID_ID); // einzigartiger aber beständiger Dateiname
-        id = id.substring(0,5); // Name auf 5 Zeichen kürzen
-        baseDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
-        dir = "/Funkzellenortung";
-        fileName = "Verbindungen_"+id+".csv";
-        this.filePath = baseDir + dir +  File.separator + fileName;
+
+        this.filePath = mContext.getSharedPreferences("settings", 0).getString("filepath",null);
+
     }
 
     public int readFile() throws IOException { // Anzahl gespeicherter Verbindungen erfassen
-        int amount = 0;  // Anzahl der gespeicherten Dateieinträge
-        File file = new File(filePath);
-        // Existiert die Datei?
-        if(file.exists() && !file.isDirectory()){
-            FileReader myFileReader = new FileReader(filePath);
-            CSVReader reader = new CSVReader(myFileReader, ',', CSVWriter.NO_QUOTE_CHARACTER, 1); // Header auslassen
-            while ((reader.readNext()) != null) {
+
+            int amount = 0;  // Anzahl der gespeicherten Dateieinträge
+            File file = new File(filePath);
+            // Existiert die Datei?
+            if (file.exists() && !file.isDirectory()) {
+                FileReader myFileReader = new FileReader(filePath);
+                CSVReader reader = new CSVReader(myFileReader, ',', CSVWriter.NO_QUOTE_CHARACTER, 1); // Header auslassen
+                while ((reader.readNext()) != null) {
                     amount++; //Lese die Datei Zeile für Zeile und erhöhe amount
+                }
+                reader.close();
             }
-            reader.close();
-        }
-        return amount;
+            return amount;
     }
 
     public void openFile() throws IOException { // Datei mit Dateibetrachter öffnen
@@ -76,6 +70,7 @@ public class MyCSVReader {
                 openFolder(); // Ansonsten versuchen den Ordner zu öffnen
             }
         }
+
     }
 
     public void openFolder() throws IOException { // Datei im Ordner anzeigen
@@ -89,9 +84,11 @@ public class MyCSVReader {
                 mContext.startActivity(Intent.createChooser(intent, "Ordner öffnen")); // Ordner öffnen
             }
         }
+
     }
 
     public void share() throws IOException { // Datei exportieren
+
         if (readFile() > 0) { // Hat die Datei überhaupt Einträge?
             File file = new File(filePath);
             Uri fileUri = Uri.fromFile(file);
