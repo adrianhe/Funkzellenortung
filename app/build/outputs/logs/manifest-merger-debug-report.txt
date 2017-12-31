@@ -1,162 +1,162 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
-MERGED from [com.android.support:design:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5dd2866526b1a918f893874205082bf1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/58528fe28555b1d2073c968e78c62939/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ab9174b0bd6b008362f633e1bf5e68fc/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/ae18714f62da0317547cd6d95866ec7c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9f9f0fd1ad9846c6ee4816f9836b05a9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/791812505f2b851bc8e6394fb86421da/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/2446d608c6132277ed348fb133fdd151/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/67163c82fdfbbc514aace1b3c9b5189b/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/6856d1a3e63e469a3fc0412e1205efce/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/b5399e70be5d682067abe8d6aac7b09c/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b0bd5be05517d2c6185f0b459659c57f/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/43f2367dbca236fe26373050e2aa81e7/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/kralle/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/58eff5a8c4c1bc50020a5496ed239600/AndroidManifest.xml:17:1-24:12
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+MERGED from [com.android.support:design:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5d0e8fbb300695a75b1caa15bd8f43ec/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f5ec5d2a10ef4d3ffbab15cf8261f90/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/fc6576851e10aaa7d61cbf6c62997241/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f47639fbccbc146747290b2728f303cb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dcadd208eb1d88478990079ab91cc631/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/6dd9fb3fd7a55f98d6e6189006a9939a/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/c8d70744f106438bd3090143df97a0cb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/baeb29a8030bfab2e8aa7361b1b43c07/AndroidManifest.xml:17:1-24:12
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
 	package
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:3:5-54
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:3:5-54
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-39:12
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:11-69
 uses-sdk
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
-MERGED from [com.android.support:design:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5dd2866526b1a918f893874205082bf1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5dd2866526b1a918f893874205082bf1/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/58528fe28555b1d2073c968e78c62939/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/58528fe28555b1d2073c968e78c62939/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ab9174b0bd6b008362f633e1bf5e68fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/ab9174b0bd6b008362f633e1bf5e68fc/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/ae18714f62da0317547cd6d95866ec7c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/ae18714f62da0317547cd6d95866ec7c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9f9f0fd1ad9846c6ee4816f9836b05a9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/9f9f0fd1ad9846c6ee4816f9836b05a9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/791812505f2b851bc8e6394fb86421da/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/791812505f2b851bc8e6394fb86421da/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/2446d608c6132277ed348fb133fdd151/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/2446d608c6132277ed348fb133fdd151/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/67163c82fdfbbc514aace1b3c9b5189b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/67163c82fdfbbc514aace1b3c9b5189b/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/6856d1a3e63e469a3fc0412e1205efce/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/6856d1a3e63e469a3fc0412e1205efce/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/b5399e70be5d682067abe8d6aac7b09c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/b5399e70be5d682067abe8d6aac7b09c/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b0bd5be05517d2c6185f0b459659c57f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/b0bd5be05517d2c6185f0b459659c57f/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/43f2367dbca236fe26373050e2aa81e7/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /home/kralle/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/43f2367dbca236fe26373050e2aa81e7/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/kralle/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/58eff5a8c4c1bc50020a5496ed239600/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/kralle/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/58eff5a8c4c1bc50020a5496ed239600/AndroidManifest.xml:20:5-22:41
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
-INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
+MERGED from [com.android.support:design:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5d0e8fbb300695a75b1caa15bd8f43ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5d0e8fbb300695a75b1caa15bd8f43ec/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f5ec5d2a10ef4d3ffbab15cf8261f90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f5ec5d2a10ef4d3ffbab15cf8261f90/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/fc6576851e10aaa7d61cbf6c62997241/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/fc6576851e10aaa7d61cbf6c62997241/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f47639fbccbc146747290b2728f303cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f47639fbccbc146747290b2728f303cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dcadd208eb1d88478990079ab91cc631/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dcadd208eb1d88478990079ab91cc631/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/6dd9fb3fd7a55f98d6e6189006a9939a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/6dd9fb3fd7a55f98d6e6189006a9939a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/c8d70744f106438bd3090143df97a0cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/c8d70744f106438bd3090143df97a0cb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/baeb29a8030bfab2e8aa7361b1b43c07/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/baeb29a8030bfab2e8aa7361b1b43c07/AndroidManifest.xml:20:5-22:41
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
+INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
 	android:targetSdkVersion
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
-		INJECTED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
+		INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:5:5-79
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:5:5-79
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:5:22-76
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:5:22-76
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:6:5-81
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:6:5-81
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:6:22-78
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:6:22-78
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:7:5-75
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:7:5-75
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:7:22-72
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:7:22-72
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:8:5-81
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:8:5-81
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:8:22-78
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:8:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:9:5-80
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:9:5-80
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:9:22-77
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:9:22-77
 uses-permission#android.permission.RECEIVE_SMS
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:10:5-70
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:10:5-70
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:10:22-67
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:10:22-67
 uses-permission#android.permission.READ_SMS
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:11:5-67
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:11:5-67
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:12:5-81
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:12:5-81
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:12:22-78
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:12:22-78
 application
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:13:5-38:19
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:13:5-38:19
 	android:supportsRtl
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:17:9-35
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:17:9-35
 	android:label
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:16:9-41
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:16:9-41
 	android:icon
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:15:9-43
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:15:9-43
 	android:allowBackup
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:14:9-35
 	android:theme
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:18:9-40
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:18:9-40
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:19:9-47
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:19:9-47
 service#de.henning_net.android.funkzellenortung.TrackService
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:20:9-49
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:20:9-49
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:20:18-46
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:20:18-46
 receiver#de.henning_net.android.funkzellenortung.BootReceiver
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:21:9-26:20
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:21:9-26:20
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:21:19-47
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:21:19-47
 intent-filter#android.intent.action.BOOT_COMPLETED+android.intent.category.DEFAULT
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:22:13-25:29
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:22:13-25:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:23:17-78
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:23:17-78
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:23:25-76
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:23:25-76
 category#android.intent.category.DEFAULT
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:24:17-76
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:24:17-76
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:24:27-73
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:24:27-73
 activity#de.henning_net.android.funkzellenortung.Home
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:27:9-37:20
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:27:9-37:20
 	android:screenOrientation
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:32:13-49
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:32:13-49
 	android:label
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:29:13-45
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:29:13-45
 	android:configChanges
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:31:13-48
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:31:13-48
 	android:theme
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:30:13-56
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:30:13-56
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:28:13-33
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:28:13-33
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:33:13-36:29
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:33:13-36:29
 action#android.intent.action.MAIN
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:34:17-69
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:34:17-69
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:34:25-66
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:34:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:35:17-77
+ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:35:17-77
 	android:name
-		ADDED from /home/kralle/git/Funkzellenortung/app/src/main/AndroidManifest.xml:35:27-74
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:35:27-74
