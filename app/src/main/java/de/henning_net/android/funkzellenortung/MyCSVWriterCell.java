@@ -15,12 +15,14 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.provider.Settings;
 import android.support.v4.content.ContextCompat;
+import android.telephony.CellInfo;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
 import android.text.TextUtils;
 import com.opencsv.CSVWriter;
 import java.io.File;
 import java.io.IOException;
+import java.util.List;
 
 public class MyCSVWriterCell {
 
@@ -73,10 +75,11 @@ public class MyCSVWriterCell {
                 mnc = "Unbekannt";
             }
             //CellID und LAC holen uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"
-            GsmCellLocation cell = (GsmCellLocation) tm.getCellLocation();
+            List<CellInfo> cell = tm.getAllCellInfo();
+            System.out.println("Ausgabe: "+cell);
             if (cell != null) {
-                cellID = Integer.toString(cell.getCid());
-                lac = Integer.toString(cell.getLac());
+             //   cellID = Integer.toString(cell.getCid());
+              //  lac = Integer.toString(cell.getLac());
             } else {
                 cellID = "ERROR";
                 lac = "ERROR";

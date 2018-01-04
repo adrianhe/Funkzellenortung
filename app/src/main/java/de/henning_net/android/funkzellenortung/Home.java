@@ -100,7 +100,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         // Check if the permissions have been granted
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available, start camera preview
+            // Permission is already available
         } else {
             error++;
             // Permission is missing and must be requested.
@@ -108,7 +108,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_NETWORK_STATE)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available, start camera preview
+            // Permission is already available
         } else {
             error++;
             // Permission is missing and must be requested.
@@ -116,7 +116,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_PHONE_STATE)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available, start camera preview
+            // Permission is already available
         } else {
             error++;
             // Permission is missing and must be requested.
@@ -124,7 +124,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_SMS)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available, start camera preview
+            // Permission is already available
         } else {
             error++;
             // Permission is missing and must be requested.
@@ -132,7 +132,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_SMS)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available, start camera preview
+            // Permission is already available
         } else {
             error++;
             // Permission is missing and must be requested.
@@ -140,7 +140,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available, start camera preview
+            // Permission is already available
         } else {
             error++;
             // Permission is missing and must be requested.
@@ -148,7 +148,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available, start camera preview
+            // Permission is already available
         } else {
             error++;
             // Permission is missing and must be requested.
@@ -156,7 +156,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         }
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_BOOT_COMPLETED)
                 == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available, start camera preview
+            // Permission is already available
         } else {
             // Permission is missing and must be requested.
             requestBootPermission();
