@@ -15,7 +15,15 @@ import android.content.pm.PackageManager;
 import android.os.Build;
 import android.provider.Settings;
 import android.support.v4.content.ContextCompat;
+import android.telephony.CellIdentityCdma;
+import android.telephony.CellIdentityGsm;
+import android.telephony.CellIdentityLte;
+import android.telephony.CellIdentityWcdma;
 import android.telephony.CellInfo;
+import android.telephony.CellInfoCdma;
+import android.telephony.CellInfoGsm;
+import android.telephony.CellInfoLte;
+import android.telephony.CellInfoWcdma;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
 import android.text.TextUtils;
@@ -29,10 +37,10 @@ public class MyCSVWriterCell {
     private String time;
     private String service;
     private String type;
-    private String mcc;
-    private String mnc;
-    private String lac;
-    private String cellID;
+    private String mcc = "Unbekannt";
+    private String mnc = "Unbekannt";
+    private String lac = "ERROR";
+    private String cellID = "ERROR";
     private Context mContext;
 
     // Der CSVWriter bekommt bereits Angaben, über die Zeit und die Art der Erfassung
@@ -62,34 +70,40 @@ public class MyCSVWriterCell {
         try {
 
             TelephonyManager tm = (TelephonyManager) mContext.getSystemService(Context.TELEPHONY_SERVICE);
-            String networkOperator = "";
-            if (tm.getPhoneType() == TelephonyManager.PHONE_TYPE_GSM) { // Netzwerk Typ auf GSM prüfen. Keine CDMA Unterstützung
-                networkOperator = tm.getNetworkOperator(); // Infos über Netzbetreiber holen
-            }
-            //MCC und MNC rausfiltern
-            if (!TextUtils.isEmpty(networkOperator)) {
-                mcc = networkOperator.substring(0, 3);
-                mnc = networkOperator.substring(3);
-            } else {
-                mcc = "Unbekannt";
-                mnc = "Unbekannt";
-            }
             //CellID und LAC holen uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"
-            List<CellInfo> cell = tm.getAllCellInfo();
-            System.out.println("Ausgabe: "+cell);
-            if (cell != null) {
-             //   cellID = Integer.toString(cell.getCid());
-              //  lac = Integer.toString(cell.getLac());
-            } else {
-                cellID = "ERROR";
-                lac = "ERROR";
+            List<CellInfo> cells = tm.getAllCellInfo();
+            if (cells != null){
+                CellInfo cinfo = cells.get(0);
+                if (cinfo instanceof CellInfoGsm){ //Nur GSM Unterstützung
+                    CellIdentityGsm cellIdentity = ((CellInfoGsm) cinfo).getCellIdentity();
+                    mcc = Integer.toString(cellIdentity.getMcc());
+                    mnc = Integer.toString(cellIdentity.getMnc());
+                    cellID = Integer.toString(cellIdentity.getCid());
+                    lac = Integer.toString(cellIdentity.getLac());
+                }
+                else if (cinfo instanceof CellInfoLte){ //Nur GSM Unterstützung
+                    CellIdentityLte cellIdentity = ((CellInfoLte) cinfo).getCellIdentity();
+                    mcc = Integer.toString(cellIdentity.getMcc());
+                    mnc = Integer.toString(cellIdentity.getMnc());
+                    cellID = Integer.toString(cellIdentity.getCi());
+                    lac = Integer.toString(cellIdentity.getTac());
+                }
+                else{
+                    mcc = "No GSM or LTE Cell";
+                    mnc = "No GSM or LTE Cell";
+                    cellID = "CDMA or WCDMA not supported";
+                    lac = "CDMA or WCDMA not supported";
+                }
+
+            }
+            else{
+                mcc = "No Cellinfo found";
+                mnc = "No Cellinfo found";
             }
         }
         catch(Exception ex) {
             mcc = "No Permission";
             mnc = "No Permission";
-            cellID = "ERROR";
-            lac = "ERROR";
         }
     }
 
