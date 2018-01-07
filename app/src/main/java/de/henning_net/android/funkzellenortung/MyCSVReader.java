@@ -27,7 +27,6 @@ public class MyCSVReader {
     public String getPath(){
         return mContext.getSharedPreferences("settings", 0).getString("dir",null);
     }
-
     public String getFilename(){
         return mContext.getSharedPreferences("settings", 0).getString("file",null);
     }

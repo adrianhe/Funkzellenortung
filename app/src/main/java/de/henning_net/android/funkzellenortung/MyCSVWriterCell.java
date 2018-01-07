@@ -29,6 +29,7 @@ import android.telephony.gsm.GsmCellLocation;
 import android.text.TextUtils;
 import com.opencsv.CSVWriter;
 import java.io.File;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.List;
 
@@ -59,7 +60,7 @@ public class MyCSVWriterCell {
         }
     }
 
-    public void getNetwork(){
+    private void getNetwork(){
 
 
         if ( Build.VERSION.SDK_INT >= 23 &&
@@ -74,14 +75,14 @@ public class MyCSVWriterCell {
             List<CellInfo> cells = tm.getAllCellInfo();
             if (cells != null){
                 CellInfo cinfo = cells.get(0);
-                if (cinfo instanceof CellInfoGsm){ //Nur GSM Unterstützung
+                if (cinfo instanceof CellInfoGsm){ //GSM Unterstützung
                     CellIdentityGsm cellIdentity = ((CellInfoGsm) cinfo).getCellIdentity();
                     mcc = Integer.toString(cellIdentity.getMcc());
                     mnc = Integer.toString(cellIdentity.getMnc());
                     cellID = Integer.toString(cellIdentity.getCid());
                     lac = Integer.toString(cellIdentity.getLac());
                 }
-                else if (cinfo instanceof CellInfoLte){ //Nur GSM Unterstützung
+                else if (cinfo instanceof CellInfoLte){ //LTE Unterstützung
                     CellIdentityLte cellIdentity = ((CellInfoLte) cinfo).getCellIdentity();
                     mcc = Integer.toString(cellIdentity.getMcc());
                     mnc = Integer.toString(cellIdentity.getMnc());
@@ -91,8 +92,6 @@ public class MyCSVWriterCell {
                 else{
                     mcc = "No GSM or LTE Cell";
                     mnc = "No GSM or LTE Cell";
-                    cellID = "CDMA or WCDMA not supported";
-                    lac = "CDMA or WCDMA not supported";
                 }
 
             }
@@ -116,7 +115,8 @@ public class MyCSVWriterCell {
 
             // Verzeichnis und Datei bestimmen
             String filePath = mContext.getSharedPreferences("settings", 0).getString("filepath",null);
-
+            File test = new File(mContext.getExternalFilesDir(null), "demo.csv");
+            System.out.println(test);
             File file = new File(filePath);
             CSVWriter writer;
             if (file.exists() && !file.isDirectory()) {  //Datei existiert bereits

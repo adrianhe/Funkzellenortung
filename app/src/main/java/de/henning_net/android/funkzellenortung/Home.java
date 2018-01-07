@@ -33,15 +33,13 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
     private static final int PERMISSION_READ_PHONE_STATE = 2;
     private static final int PERMISSION_READ_SMS = 3;
     private static final int PERMISSION_RECEIVE_SMS = 4;
-    private static final int PERMISSION_READ_EXTERNAL_STORAGE = 5;
-    private static final int PERMISSION_WRITE_EXTERNAL_STORAGE = 6;
     private static final int PERMISSION_RECEIVE_BOOT_COMPLETED = 7;
 
     protected void onCreate(Bundle savedInstanceState) { // App wird geöffnet
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         mLayout = findViewById(R.id.status);
-        TextView status = (TextView)findViewById(R.id.status);
+        TextView status = (TextView) mLayout;
         if (isServiceRunning()) status.setText("Aktiviert"); // Funkzellenortung aktiv
         else status.setText("Deaktiviert"); // Funkzellenortung nicht aktiv
     }
@@ -53,15 +51,18 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             SharedPreferences.Editor editor = settings.edit();
             if (!settings.contains("filepath")){ // einzigartigen aber beständigen Dateiname erzeugen
                 String id = UUID.randomUUID().toString().substring(0,5); // Name auf 6 Zeichen kürzen
-                String baseDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
-                String dir = "/Funkzellenortung";
+                //String baseDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
+                String baseDir = getExternalFilesDir(null).getAbsolutePath();
+                //String dir = "/Funkzellenortung";
                 String fileName = "Verbindungen_"+id+".csv";
-                String filePath = baseDir + dir +  File.separator + fileName;
+                //String filePath = baseDir + dir +  File.separator + fileName;
+                String filePath = baseDir +  File.separator + fileName;
                 editor.putString("filepath",filePath); // In Shared Pref speichern
                 editor.putString("file",fileName); // In Shared Pref speichern
-                editor.putString("dir",baseDir + dir); // In Shared Pref speichern
-                File newDir = new File(baseDir + dir);
-                newDir.mkdirs();
+                //editor.putString("dir",baseDir + dir); // In Shared Pref speichern
+                editor.putString("dir",baseDir); // In Shared Pref speichern
+                //File newDir = new File(baseDir + dir);
+                //newDir.mkdirs();
             }
             editor.apply();
 
@@ -138,22 +139,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             // Permission is missing and must be requested.
             requestReceiveSMSPermission();
         }
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.READ_EXTERNAL_STORAGE)
-                == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available
-        } else {
-            error++;
-            // Permission is missing and must be requested.
-            requestReadStoragePermission();
-        }
-        if (ActivityCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE)
-                == PackageManager.PERMISSION_GRANTED) {
-            // Permission is already available
-        } else {
-            error++;
-            // Permission is missing and must be requested.
-            requestWriteStoragePermission();
-        }
+
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.RECEIVE_BOOT_COMPLETED)
                 == PackageManager.PERMISSION_GRANTED) {
             // Permission is already available
@@ -270,24 +256,6 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             }
         }
         if (requestCode == PERMISSION_RECEIVE_SMS) {
-            // Request for location permission.
-            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                startTracking();
-            } else {
-                Snackbar.make(mLayout, "Die App funktioniert nur mit allen Berechtigungen.",
-                        Snackbar.LENGTH_INDEFINITE).show();
-            }
-        }
-        if (requestCode == PERMISSION_READ_EXTERNAL_STORAGE) {
-            // Request for location permission.
-            if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
-                startTracking();
-            } else {
-                Snackbar.make(mLayout, "Die App funktioniert nur mit allen Berechtigungen.",
-                        Snackbar.LENGTH_INDEFINITE).show();
-            }
-        }
-        if (requestCode == PERMISSION_WRITE_EXTERNAL_STORAGE) {
             // Request for location permission.
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startTracking();
@@ -442,59 +410,6 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
         }
     }
 
-    private void requestReadStoragePermission() {
-        // Permission has not been granted and must be requested.
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.READ_EXTERNAL_STORAGE)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // Display a SnackBar with a button to request the missing permission.
-            Snackbar.make(mLayout, "READ_EXTERNAL_STORAGE ist notwendig, um die CSV-Datei zu lesen.",
-                    Snackbar.LENGTH_INDEFINITE).setAction("OK", new View.OnClickListener() {
-                public void onClick(View view) {
-                    // Request the permission
-                    ActivityCompat.requestPermissions(Home.this,
-                            new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                            PERMISSION_READ_EXTERNAL_STORAGE);
-                }
-            }).show();
-
-        } else {
-            Snackbar.make(mLayout,
-                    "Permission is not available. Requesting READ_EXTERNAL_STORAGE.",
-                    Snackbar.LENGTH_SHORT).show();
-            // Request the permission. The result will be received in onRequestPermissionResult().
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
-                    PERMISSION_READ_EXTERNAL_STORAGE);
-        }
-    }
-
-    private void requestWriteStoragePermission() {
-        // Permission has not been granted and must be requested.
-        if (ActivityCompat.shouldShowRequestPermissionRationale(this,
-                Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-            // Provide an additional rationale to the user if the permission was not granted
-            // and the user would benefit from additional context for the use of the permission.
-            // Display a SnackBar with a button to request the missing permission.
-            Snackbar.make(mLayout, "WRITE_EXTERNAL_STORAGE ist notwendig, um in die CSV-Datei zu schreiben.",
-                    Snackbar.LENGTH_INDEFINITE).setAction("OK", new View.OnClickListener() {
-                public void onClick(View view) {
-                    // Request the permission
-                    ActivityCompat.requestPermissions(Home.this,
-                            new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                            PERMISSION_WRITE_EXTERNAL_STORAGE);
-                }
-            }).show();
-
-        } else {
-            Snackbar.make(mLayout,
-                    "Permission is not available. Requesting WRITE_EXTERNAL_STORAGE.",
-                    Snackbar.LENGTH_SHORT).show();
-            // Request the permission. The result will be received in onRequestPermissionResult().
-            ActivityCompat.requestPermissions(this, new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE},
-                    PERMISSION_WRITE_EXTERNAL_STORAGE);
-        }
-    }
 
     private void requestBootPermission() {
         // Permission has not been granted and must be requested.
