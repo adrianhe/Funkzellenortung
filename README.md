@@ -4,7 +4,7 @@
 ##### SYSTEMVORAUSETZUNGEN #####
 
 
-* Android 4.1 (Jelly Bean) API 16
+* Android 4.2 (Jelly Bean) API 17
 
 
 ##### INFO #####
