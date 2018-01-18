@@ -111,7 +111,7 @@ ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidMan
 	android:label
 		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:15:9-41
 	android:icon
-		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:14:9-43
+		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:14:9-45
 	android:allowBackup
 		ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:13:9-35
 	android:theme

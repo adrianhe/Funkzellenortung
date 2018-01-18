@@ -51,18 +51,13 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             SharedPreferences.Editor editor = settings.edit();
             if (!settings.contains("filepath")){ // einzigartigen aber beständigen Dateiname erzeugen
                 String id = UUID.randomUUID().toString().substring(0,5); // Name auf 6 Zeichen kürzen
-                //String baseDir = android.os.Environment.getExternalStorageDirectory().getAbsolutePath();
                 String baseDir = getExternalFilesDir(null).getAbsolutePath();
-                //String dir = "/Funkzellenortung";
                 String fileName = "Verbindungen_"+id+".csv";
-                //String filePath = baseDir + dir +  File.separator + fileName;
                 String filePath = baseDir +  File.separator + fileName;
                 editor.putString("filepath",filePath); // In Shared Pref speichern
                 editor.putString("file",fileName); // In Shared Pref speichern
-                //editor.putString("dir",baseDir + dir); // In Shared Pref speichern
                 editor.putString("dir",baseDir); // In Shared Pref speichern
-                //File newDir = new File(baseDir + dir);
-                //newDir.mkdirs();
+                editor.putInt("amount",0); // In Shared Pref speichern
             }
             editor.apply();
 
@@ -204,7 +199,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
     }
 
     public void getAmount() throws IOException { // Zähle wie viele Funkzellen bereits erfasst sind
-        MyCSVReader myReader = new MyCSVReader(this); // Starte Reader zum CSV-Datei Einlesen
+        MyCSVReader myReader = new MyCSVReader(this); // Starte Reader
         String temp = myReader.getPath();
         TextView hint = (TextView) findViewById(R.id.hint);
         TextView counter = (TextView) findViewById(R.id.counter);

@@ -3321,10 +3321,8 @@ public final class R {
     public static final int menu_home=0x7f0b0000;
   }
   public static final class mipmap {
-    public static final int ic_launcher=0x7f0c0000;
-    public static final int ic_launcher_foreground=0x7f0c0001;
-    public static final int ic_launcher_round=0x7f0c0002;
-    public static final int reload_cc0=0x7f0c0003;
+    public static final int ic_launcher_2=0x7f0c0000;
+    public static final int reload_cc0=0x7f0c0001;
   }
   public static final class string {
     public static final int abc_action_bar_home_description=0x7f0d0000;

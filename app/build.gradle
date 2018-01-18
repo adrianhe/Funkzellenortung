@@ -5,10 +5,10 @@ android {
 
     defaultConfig {
         applicationId "de.funkzellenortung"
-        minSdkVersion 17
+        minSdkVersion 18
         targetSdkVersion 21
-        versionCode 19
-        versionName "2.0"
+        versionCode 20
+        versionName "2.1"
     }
     buildTypes {
         release {

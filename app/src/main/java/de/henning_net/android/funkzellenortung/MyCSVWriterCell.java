@@ -11,6 +11,7 @@ package de.henning_net.android.funkzellenortung;
  */
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.pm.PackageManager;
 import android.os.Build;
 import android.provider.Settings;
@@ -74,25 +75,35 @@ public class MyCSVWriterCell {
             //CellID und LAC holen uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"
             List<CellInfo> cells = tm.getAllCellInfo();
             if (cells != null){
-                CellInfo cinfo = cells.get(0);
-                if (cinfo instanceof CellInfoGsm){ //GSM Unterstützung
-                    CellIdentityGsm cellIdentity = ((CellInfoGsm) cinfo).getCellIdentity();
-                    mcc = Integer.toString(cellIdentity.getMcc());
-                    mnc = Integer.toString(cellIdentity.getMnc());
-                    cellID = Integer.toString(cellIdentity.getCid());
-                    lac = Integer.toString(cellIdentity.getLac());
+                for (CellInfo cinfo:cells) {
+                    if (cinfo instanceof CellInfoGsm) { //GSM Unterstützung
+                        CellIdentityGsm cellIdentity = ((CellInfoGsm) cinfo).getCellIdentity();
+                        mcc = Integer.toString(cellIdentity.getMcc());
+                        mnc = Integer.toString(cellIdentity.getMnc());
+                        cellID = Integer.toString(cellIdentity.getCid());
+                        lac = Integer.toString(cellIdentity.getLac());
+                        break;
+                    } else if (cinfo instanceof CellInfoLte) { //LTE Unterstützung
+                        CellIdentityLte cellIdentity = ((CellInfoLte) cinfo).getCellIdentity();
+                        mcc = Integer.toString(cellIdentity.getMcc());
+                        mnc = Integer.toString(cellIdentity.getMnc());
+                        cellID = Integer.toString(cellIdentity.getCi());
+                        lac = Integer.toString(cellIdentity.getTac());
+                        break;
+                    } else if (cinfo instanceof CellInfoWcdma) { //WCDMA Unterstützung
+                        CellIdentityWcdma cellIdentity = ((CellInfoWcdma) cinfo).getCellIdentity();
+                        mcc = Integer.toString(cellIdentity.getMcc());
+                        mnc = Integer.toString(cellIdentity.getMnc());
+                        cellID = Integer.toString(cellIdentity.getCid());
+                        lac = Integer.toString(cellIdentity.getLac());
+                        break;
+                    }
+                    else{
+                        mcc = cinfo.toString(); //Keine CDMA Unterstützung
+                        mnc = "CDMA Cell";
+                    }
                 }
-                else if (cinfo instanceof CellInfoLte){ //LTE Unterstützung
-                    CellIdentityLte cellIdentity = ((CellInfoLte) cinfo).getCellIdentity();
-                    mcc = Integer.toString(cellIdentity.getMcc());
-                    mnc = Integer.toString(cellIdentity.getMnc());
-                    cellID = Integer.toString(cellIdentity.getCi());
-                    lac = Integer.toString(cellIdentity.getTac());
-                }
-                else{
-                    mcc = "No GSM or LTE Cell";
-                    mnc = "No GSM or LTE Cell";
-                }
+
 
             }
             else{
@@ -115,20 +126,26 @@ public class MyCSVWriterCell {
 
             // Verzeichnis und Datei bestimmen
             String filePath = mContext.getSharedPreferences("settings", 0).getString("filepath",null);
-            File test = new File(mContext.getExternalFilesDir(null), "demo.csv");
-            System.out.println(test);
             File file = new File(filePath);
             CSVWriter writer;
             if (file.exists() && !file.isDirectory()) {  //Datei existiert bereits
                 java.io.FileWriter myFileWriter = new java.io.FileWriter(filePath, true);
-                writer = new CSVWriter(myFileWriter, ',', CSVWriter.NO_QUOTE_CHARACTER); // Komma trennt Dateieinträge
+                writer = new CSVWriter(myFileWriter, ',', CSVWriter.NO_QUOTE_CHARACTER,CSVWriter.NO_ESCAPE_CHARACTER,CSVWriter.DEFAULT_LINE_END); // Komma trennt Dateieinträge
             } else { // Datei wird erstellt
-                writer = new CSVWriter(new java.io.FileWriter(filePath), ',', CSVWriter.NO_QUOTE_CHARACTER); // Komma trennt Dateieinträge
+                writer = new CSVWriter(new java.io.FileWriter(filePath), ',', CSVWriter.NO_QUOTE_CHARACTER, CSVWriter.NO_ESCAPE_CHARACTER,CSVWriter.DEFAULT_LINE_END); // Komma trennt Dateieinträge
                 String[] header = {"Datum und Uhrzeit", "Dienst", "Richtung", "MCC", "MNC", "LAC", "CellID"};
                 writer.writeNext(header); // Schreibe Header der Datei
             }
             String[] data = {time, service, type, mcc, mnc, lac, cellID};
             writer.writeNext(data); // Schreibe alle Angaben in die Datei
             writer.close();
+
+        // Counter updaten
+        SharedPreferences settings = mContext.getSharedPreferences("settings", 0);
+        int amount = settings.getInt("amount",0);
+        ++amount;
+        SharedPreferences.Editor editor = settings.edit();
+        editor.putInt("amount", amount);
+        editor.apply();
     }
 }

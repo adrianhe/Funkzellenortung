@@ -14,7 +14,11 @@ import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
 import android.webkit.MimeTypeMap;
+
+import com.opencsv.CSVParser;
+import com.opencsv.CSVParserBuilder;
 import com.opencsv.CSVReader;
+import com.opencsv.CSVReaderBuilder;
 import com.opencsv.CSVWriter;
 import java.io.File;
 import java.io.FileReader;
@@ -40,19 +44,7 @@ public class MyCSVReader {
     }
 
     public int readFile() throws IOException { // Anzahl gespeicherter Verbindungen erfassen
-
-            int amount = 0;  // Anzahl der gespeicherten Dateieinträge
-            File file = new File(filePath);
-            // Existiert die Datei?
-            if (file.exists() && !file.isDirectory()) {
-                FileReader myFileReader = new FileReader(filePath);
-                CSVReader reader = new CSVReader(myFileReader, ',', CSVWriter.NO_QUOTE_CHARACTER, 1); // Header auslassen
-                while ((reader.readNext()) != null) {
-                    amount++; //Lese die Datei Zeile für Zeile und erhöhe amount
-                }
-                reader.close();
-            }
-            return amount;
+        return mContext.getSharedPreferences("settings", 0).getInt("amount",0);
     }
 
     public void openFile() throws IOException { // Datei mit Dateibetrachter öffnen
