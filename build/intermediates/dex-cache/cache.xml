@@ -3,13 +3,23 @@
 
     <item
         is-multidex="false"
-        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/jars/classes.jar"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/c8d70744f106438bd3090143df97a0cb/jars/classes.jar"
         jumboMode="false"
-        min-sdk-version="17"
+        min-sdk-version="18"
         optimize="true"
         revision="26.0.2"
-        sha1="9296d6f092fcdba4fafb6ac26546a39babdab46a">
-        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/9.jar" />
+        sha1="a5fa2e3704f51b30b7b47e12a3a2909728799583">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/10.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/commons-beanutils/commons-beanutils/1.9.3/c845703de334ddc6b4b3cd26835458cb1cba1f3d/commons-beanutils-1.9.3.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c845703de334ddc6b4b3cd26835458cb1cba1f3d">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/17.jar" />
     </item>
     <item
         is-multidex="false"
@@ -35,6 +45,16 @@
         is-multidex="false"
         jar="/home/henning/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar"
         jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7d7f60c4783872861222166f6164215f8951c7b1">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/20.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/android.arch.lifecycle/common/1.0.3/7d7f60c4783872861222166f6164215f8951c7b1/common-1.0.3.jar"
+        jumboMode="false"
         min-sdk-version="17"
         optimize="true"
         revision="26.0.2"
@@ -53,13 +73,13 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/henning/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.6/9d28a6b23650e8a7e9063c04588ace6cf7012c17/commons-lang3-3.6.jar"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/com.opencsv/opencsv/4.1/5d0a1c5f5e94c9fc00a7e6c886e2d2a1511ea95e/opencsv-4.1.jar"
         jumboMode="false"
-        min-sdk-version="17"
+        min-sdk-version="18"
         optimize="true"
         revision="26.0.2"
-        sha1="9d28a6b23650e8a7e9063c04588ace6cf7012c17">
-        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/16.jar" />
+        sha1="5d0a1c5f5e94c9fc00a7e6c886e2d2a1511ea95e">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/3.jar" />
     </item>
     <item
         is-multidex="false"
@@ -73,23 +93,13 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/henning/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/fc6576851e10aaa7d61cbf6c62997241/jars/classes.jar"
         jumboMode="false"
-        min-sdk-version="17"
+        min-sdk-version="18"
         optimize="true"
         revision="26.0.2"
-        sha1="0b9ef4342c934a1a8b107506273dc8061662a322">
-        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/14.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="17"
-        optimize="true"
-        revision="26.0.2"
-        sha1="ed6560f31a6a40b5965f5879d8f2eab1f68def05">
-        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/11.jar" />
+        sha1="bcd0bcdef85b31a656af76e39c0c95ce70800772">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/4.jar" />
     </item>
     <item
         is-multidex="false"
@@ -103,13 +113,33 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/jars/classes.jar"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5d0e8fbb300695a75b1caa15bd8f43ec/jars/classes.jar"
         jumboMode="false"
-        min-sdk-version="17"
+        min-sdk-version="18"
         optimize="true"
         revision="26.0.2"
-        sha1="618f75fe11febf263e3234c7da7dc892232a5608">
-        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/5.jar" />
+        sha1="031cc16b7b6e77b3c050134ecab9fa5c2640a069">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/android.arch.core/common/1.0.0/a2d487452376193fc8c103dd2b9bd5f2b1b44563/common-1.0.0.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a2d487452376193fc8c103dd2b9bd5f2b1b44563">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/21.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f5ec5d2a10ef4d3ffbab15cf8261f90/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="04cd0cacbedcb338f64665b88bad64d145325fbd">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/2.jar" />
     </item>
     <item
         is-multidex="false"
@@ -135,6 +165,16 @@
         is-multidex="false"
         jar="/home/henning/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar"
         jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/18.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/commons-collections/commons-collections/3.2.2/8ad72fe39fa8c91eaaf12aadb21e0c3661fe26d5/commons-collections-3.2.2.jar"
+        jumboMode="false"
         min-sdk-version="17"
         optimize="true"
         revision="26.0.2"
@@ -143,23 +183,13 @@
     </item>
     <item
         is-multidex="false"
-        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/jars/classes.jar"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f47639fbccbc146747290b2728f303cb/jars/classes.jar"
         jumboMode="false"
-        min-sdk-version="17"
+        min-sdk-version="18"
         optimize="true"
         revision="26.0.2"
-        sha1="25c8cb628374f9a2d59ff9e1172753751e9a9f84">
-        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/12.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/jars/classes.jar"
-        jumboMode="false"
-        min-sdk-version="17"
-        optimize="true"
-        revision="26.0.2"
-        sha1="b432e82447a3af781e927b9ba0bbb9fe2a496d4a">
-        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/13.jar" />
+        sha1="ac2ce6027755bcf49442e70597bec0feb9064f68">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -183,6 +213,196 @@
     </item>
     <item
         is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.1/c336bf600f44b88af356c8a85eef4af822b06a4d/commons-text-1.1.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c336bf600f44b88af356c8a85eef4af822b06a4d">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/6dd9fb3fd7a55f98d6e6189006a9939a/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="caa03787689212c10939f308a55a8dc8a3333ed2">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/8.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.1/c336bf600f44b88af356c8a85eef4af822b06a4d/commons-text-1.1.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="26.0.2"
+        sha1="c336bf600f44b88af356c8a85eef4af822b06a4d">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/15.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9296d6f092fcdba4fafb6ac26546a39babdab46a">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.6/9d28a6b23650e8a7e9063c04588ace6cf7012c17/commons-lang3-3.6.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9d28a6b23650e8a7e9063c04588ace6cf7012c17">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9296d6f092fcdba4fafb6ac26546a39babdab46a">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.6/9d28a6b23650e8a7e9063c04588ace6cf7012c17/commons-lang3-3.6.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9d28a6b23650e8a7e9063c04588ace6cf7012c17">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/16.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0b9ef4342c934a1a8b107506273dc8061662a322">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ed6560f31a6a40b5965f5879d8f2eab1f68def05">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="ed6560f31a6a40b5965f5879d8f2eab1f68def05">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/11.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="618f75fe11febf263e3234c7da7dc892232a5608">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/27.0.2/b9ef4342c934a1a8b107506273dc8061662a322/support-annotations-27.0.2.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="0b9ef4342c934a1a8b107506273dc8061662a322">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/14.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="26.0.2"
+        sha1="618f75fe11febf263e3234c7da7dc892232a5608">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="25c8cb628374f9a2d59ff9e1172753751e9a9f84">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="26.0.2"
+        sha1="25c8cb628374f9a2d59ff9e1172753751e9a9f84">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/12.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b432e82447a3af781e927b9ba0bbb9fe2a496d4a">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="17"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b432e82447a3af781e927b9ba0bbb9fe2a496d4a">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/13.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dcadd208eb1d88478990079ab91cc631/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="fe3916317a699975bcce0cba2d13fd2d8cf88922">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/baeb29a8030bfab2e8aa7361b1b43c07/jars/classes.jar"
+        jumboMode="false"
+        min-sdk-version="18"
+        optimize="true"
+        revision="26.0.2"
+        sha1="d7cc5473b9cf4ea159a263cd477fb3ecb2987b96">
+        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/19.jar" />
+    </item>
+    <item
+        is-multidex="false"
         jar="/home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dcadd208eb1d88478990079ab91cc631/jars/classes.jar"
         jumboMode="false"
         min-sdk-version="17"
@@ -200,16 +420,6 @@
         revision="26.0.2"
         sha1="c845703de334ddc6b4b3cd26835458cb1cba1f3d">
         <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/17.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/home/henning/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-text/1.1/c336bf600f44b88af356c8a85eef4af822b06a4d/commons-text-1.1.jar"
-        jumboMode="false"
-        min-sdk-version="17"
-        optimize="true"
-        revision="26.0.2"
-        sha1="c336bf600f44b88af356c8a85eef4af822b06a4d">
-        <dex dex="/home/henning/StudioProjects/Funkzellenortung/app/build/intermediates/transforms/preDex/release/15.jar" />
     </item>
 
 </items>
