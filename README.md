@@ -1,18 +1,29 @@
 *Android-App Funkzellenortung*
 
 
-##### SYSTEMVORAUSETZUNGEN #####
-
-
-* Android 4.2 (Jelly Bean) API 17
-
-
 ##### INFO #####
 
 
-Erstellt von Adrian Henning im Frühling 2016 im Rahmen der Masterarbeit "Entwicklung einer Visualisierungssoftware für Mobilfunkverbindungsdaten zur Förderung von Kompetenzen in einer digital geprägten Kultur innerhalb einer Unterrichtsreihe im Fach Informatik" am Fachbereich Didaktik der Informatik der Freien Universität Berlin. Die Android-App ist ein Bestandteil des Softwarepakets zur Visualisierung von Mobilfunkverbindungsdaten.
-Mehr Informationen auf adrian.henning-net.de/mobilfunk.
+Die Android-App schreibt bei Nutzung des Mobilfunknetzes (Telefonie, SMS oder mobile Daten) den Zeitpunkt, die Richtung und den aktuellen Standort in eine CSV-Datei und soll dabei die gespeicherten Daten in den Datenbanken der Mobilfunkprovider simulieren. Der Standort besteht aus MCC, MNC, LAC und CellID der aktuell aktiven Funkzelle. Neben diesen Daten erfassen die Mobilfunkprovider auch Kenndaten der beteiligten Teilnehmer, wie z.B. Rufnummer. Diese Daten werden weder von der App abgerufen noch gespeichert, da der Fokus auf der Erstellung von Bewegungsprofilen für Bildungszwecke liegt. Fehlermeldungen in der CSV-Datei können durch unzureichende Berechtigungen der App, zu schnelle Funkzellenwechsel, Verbindungsabbruch und ab Android 8 durch Deaktivierung der Location Services (siehe Systemvoraussetzungen) begründet sein.
+Die Android-App ist ein Bestandteil des Softwarepakets zur Visualisierung von Mobilfunkverbindungsdaten. Mehr Informationen auf adrian.henning-net.de/mobilfunk.
 
+
+##### SYSTEMVORAUSETZUNGEN #####
+
+
+* Android 4.3 (Jelly Bean) API 18
+Ab Android 8.0 müssen Location Services über Mobilfunknetze aktiviert sein (Modus Battery Saving / Energiesparmodus)
+
+
+##### BERECHTIGUNGEN #####
+
+
+* Ungefährer Standort (ACCESS_COARSE_LOCATION) ist notwendig, um die Informationen über die Funkzelle abzurufen.
+* Netzwerkstatus anzeigen (ACCESS_NETWORK_STATE) ist notwendig, um den Zustand der Internetverbindung zu prüfen.
+* Telefonstatus lesen und identifizieren (READ_PHONE_STATE) ist notwendig, um den Zustand der Telefonverbindung zu prüfen.
+* SMS oder MMS lesen (READ_SMS) ist notwendig, um auf ausgehende SMS zu prüfen.
+* SMS empfangen (RECEIVE_SMS) ist notwendig, um auf eingehende SMS zu prüfen.
+* Automatisch nach dem Booten starten (RECEIVE_BOOT_COMPLETED) ist notwendig, um das Tracken nach einem Neustart fortzusetzen.
 
 
 ###### KONTAKT ######
