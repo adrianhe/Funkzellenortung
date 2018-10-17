@@ -12,8 +12,7 @@ Die Android-App ist ein Bestandteil des Softwarepakets zur Visualisierung von Mo
 
 
 * Android 4.3 (Jelly Bean) API 18
-
-Ab Android 8.0 müssen Location Services über Mobilfunknetze aktiviert sein (Modus Battery Saving / Energiesparmodus)
+* Ab Android 8.0 müssen Location Services über Mobilfunknetze aktiviert sein (Modus Battery Saving / Energiesparmodus)
 
 
 ##### BERECHTIGUNGEN #####
