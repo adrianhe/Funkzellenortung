@@ -219,7 +219,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startTracking();
             } else {
-                Snackbar.make(mLayout, "Die App funktioniert nur mit allen Berechtigungen.",
+                Snackbar.make(mLayout, "Informationen über die Funkzelle müssen abgerufen werden. Die App funktioniert nur mit allen Berechtigungen.",
                         Snackbar.LENGTH_INDEFINITE).show();
             }
         }
@@ -228,7 +228,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startTracking();
             } else {
-                Snackbar.make(mLayout, "Die App funktioniert nur mit allen Berechtigungen.",
+                Snackbar.make(mLayout, "Mobiler Datenverkehr muss erkannt werden. Die App funktioniert nur mit allen Berechtigungen.",
                         Snackbar.LENGTH_INDEFINITE).show();
             }
         }
@@ -237,7 +237,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startTracking();
             } else {
-                Snackbar.make(mLayout, "Die App funktioniert nur mit allen Berechtigungen.",
+                Snackbar.make(mLayout, "Anrufe müssen erkannt werden. Die App funktioniert nur mit allen Berechtigungen.",
                         Snackbar.LENGTH_INDEFINITE).show();
             }
         }
@@ -246,7 +246,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startTracking();
             } else {
-                Snackbar.make(mLayout, "Die App funktioniert nur mit allen Berechtigungen.",
+                Snackbar.make(mLayout, "Ausgehende SMS müssen erkannt werden. Die App funktioniert nur mit allen Berechtigungen.",
                         Snackbar.LENGTH_INDEFINITE).show();
             }
         }
@@ -255,7 +255,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startTracking();
             } else {
-                Snackbar.make(mLayout, "Die App funktioniert nur mit allen Berechtigungen.",
+                Snackbar.make(mLayout, "Eingehende SMS müssen erkannt werden. Die App funktioniert nur mit allen Berechtigungen.",
                         Snackbar.LENGTH_INDEFINITE).show();
             }
         }
@@ -264,7 +264,7 @@ public class Home extends AppCompatActivity implements ActivityCompat.OnRequestP
             if (grantResults.length == 1 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                 startTracking();
             } else {
-                Snackbar.make(mLayout, "Die App funktioniert nur mit allen Berechtigungen.",
+                Snackbar.make(mLayout, "Nach einem Neustart muss das Tracken wieder aktiviert werden. Die App funktioniert nur mit allen Berechtigungen.",
                         Snackbar.LENGTH_INDEFINITE).show();
             }
         }

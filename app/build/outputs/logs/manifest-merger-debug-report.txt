@@ -4,19 +4,22 @@ ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidMan
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-38:12
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-38:12
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-38:12
-MERGED from [com.android.support:design:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5d0e8fbb300695a75b1caa15bd8f43ec/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f5ec5d2a10ef4d3ffbab15cf8261f90/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-v4:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/fc6576851e10aaa7d61cbf6c62997241/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-fragment:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f47639fbccbc146747290b2728f303cb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dcadd208eb1d88478990079ab91cc631/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/6dd9fb3fd7a55f98d6e6189006a9939a/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:transition:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/c8d70744f106438bd3090143df97a0cb/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/AndroidManifest.xml:17:1-22:12
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/baeb29a8030bfab2e8aa7361b1b43c07/AndroidManifest.xml:17:1-24:12
+MERGED from [com.android.support:design:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4f928c4f47fabfa53861fd1b63e6363d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/a113e9d8fe6eccbac5404ca27f736e9d/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-v4:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/83d41dd2a3df0b5cd207af4eb05f97d2/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-fragment:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0f9fd64a03dcd01dc3c4e3043735a210/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c37a0088c11b3e6cefc146975e0ad538/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/777cd2edaccb8c1995d280e6bff6cacb/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0b6264b595b096daa62cc05368839429/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/1be135589adb5d77fa9b7434cb046fad/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/5246736b3d3e7b9434265cd2b6611c03/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:transition:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ac56ce2cd609d1e223eb81da0abecba4/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5aa63a77b3113a99aad5723ca462a036/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-compat:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c5b91355067a7265ee555660212b04e8/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/2fb374eb365bd012d279e0d0c918cc3d/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/6dd7ba72bda8849d2fbcdfe4c438ac45/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/adfc86413187fd7aa58ab394d368c08f/AndroidManifest.xml:17:1-22:12
+MERGED from [android.arch.core:runtime:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4f58f43a5f832d72eb13b116a8af1bf3/AndroidManifest.xml:17:1-22:12
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-38:12
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-38:12
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:2:1-38:12
@@ -38,32 +41,38 @@ uses-sdk
 ADDED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
-MERGED from [com.android.support:design:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5d0e8fbb300695a75b1caa15bd8f43ec/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:design:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/5d0e8fbb300695a75b1caa15bd8f43ec/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f5ec5d2a10ef4d3ffbab15cf8261f90/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:appcompat-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/9f5ec5d2a10ef4d3ffbab15cf8261f90/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/fc6576851e10aaa7d61cbf6c62997241/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-v4:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/fc6576851e10aaa7d61cbf6c62997241/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-fragment:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/1128b9e36a3b43b99f21d3f216d69475/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f47639fbccbc146747290b2728f303cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-utils:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/f47639fbccbc146747290b2728f303cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dcadd208eb1d88478990079ab91cc631/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/dcadd208eb1d88478990079ab91cc631/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/6dd9fb3fd7a55f98d6e6189006a9939a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/6dd9fb3fd7a55f98d6e6189006a9939a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/6f48337013deddf6522e9fd306edc0bf/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/c8d70744f106438bd3090143df97a0cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/c8d70744f106438bd3090143df97a0cb/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-core-ui:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/424845fa974d6a0e7ee1073043694af9/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/1e454ca5eca1bb97293e16151ec7b799/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-compat:27.0.2] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/bd318fb22e365d12f375cbee27f24f16/AndroidManifest.xml:20:5-44
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/baeb29a8030bfab2e8aa7361b1b43c07/AndroidManifest.xml:20:5-22:41
-MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/baeb29a8030bfab2e8aa7361b1b43c07/AndroidManifest.xml:20:5-22:41
+MERGED from [com.android.support:design:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4f928c4f47fabfa53861fd1b63e6363d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:design:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/design-27.1.1.aar/4f928c4f47fabfa53861fd1b63e6363d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/a113e9d8fe6eccbac5404ca27f736e9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:appcompat-v7:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.1.1.aar/a113e9d8fe6eccbac5404ca27f736e9d/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/83d41dd2a3df0b5cd207af4eb05f97d2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-v4-27.1.1.aar/83d41dd2a3df0b5cd207af4eb05f97d2/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0f9fd64a03dcd01dc3c4e3043735a210/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-fragment:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-fragment-27.1.1.aar/0f9fd64a03dcd01dc3c4e3043735a210/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c37a0088c11b3e6cefc146975e0ad538/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.1.1.aar/c37a0088c11b3e6cefc146975e0ad538/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/777cd2edaccb8c1995d280e6bff6cacb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.1.1.aar/777cd2edaccb8c1995d280e6bff6cacb/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0b6264b595b096daa62cc05368839429/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-ui:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.1.1.aar/0b6264b595b096daa62cc05368839429/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/1be135589adb5d77fa9b7434cb046fad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-core-utils:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.1.1.aar/1be135589adb5d77fa9b7434cb046fad/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/5246736b3d3e7b9434265cd2b6611c03/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.1.1.aar/5246736b3d3e7b9434265cd2b6611c03/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ac56ce2cd609d1e223eb81da0abecba4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/transition-27.1.1.aar/ac56ce2cd609d1e223eb81da0abecba4/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5aa63a77b3113a99aad5723ca462a036/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.1.1.aar/5aa63a77b3113a99aad5723ca462a036/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c5b91355067a7265ee555660212b04e8/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-compat:27.1.1] /home/henning/.gradle/caches/transforms-1/files-1.1/support-compat-27.1.1.aar/c5b91355067a7265ee555660212b04e8/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/2fb374eb365bd012d279e0d0c918cc3d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:livedata-core:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/livedata-core-1.1.0.aar/2fb374eb365bd012d279e0d0c918cc3d/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/6dd7ba72bda8849d2fbcdfe4c438ac45/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:viewmodel:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/viewmodel-1.1.0.aar/6dd7ba72bda8849d2fbcdfe4c438ac45/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/adfc86413187fd7aa58ab394d368c08f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.lifecycle:runtime:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/adfc86413187fd7aa58ab394d368c08f/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4f58f43a5f832d72eb13b116a8af1bf3/AndroidManifest.xml:20:5-44
+MERGED from [android.arch.core:runtime:1.1.0] /home/henning/.gradle/caches/transforms-1/files-1.1/runtime-1.1.0.aar/4f58f43a5f832d72eb13b116a8af1bf3/AndroidManifest.xml:20:5-44
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
 INJECTED from /home/henning/StudioProjects/Funkzellenortung/app/src/main/AndroidManifest.xml:4:5-17
 	android:targetSdkVersion

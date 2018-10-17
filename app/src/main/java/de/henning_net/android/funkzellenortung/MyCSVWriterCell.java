@@ -25,6 +25,9 @@ import android.telephony.CellInfoCdma;
 import android.telephony.CellInfoGsm;
 import android.telephony.CellInfoLte;
 import android.telephony.CellInfoWcdma;
+import android.telephony.CellSignalStrengthGsm;
+import android.telephony.CellSignalStrengthLte;
+import android.telephony.CellSignalStrengthWcdma;
 import android.telephony.TelephonyManager;
 import android.telephony.gsm.GsmCellLocation;
 import android.text.TextUtils;
@@ -41,8 +44,11 @@ public class MyCSVWriterCell {
     private String type;
     private String mcc = "Unbekannt";
     private String mnc = "Unbekannt";
+    private String radio = "ERROR";
     private String lac = "ERROR";
     private String cellID = "ERROR";
+    private String psc = "ERROR"; //Primary Scrambling Code in Umts, Physical CellID in LTE
+    private String signal = "ERROR"; // Signal Strength in dBm
     private Context mContext;
 
     // Der CSVWriter bekommt bereits Angaben, über die Zeit und die Art der Erfassung
@@ -78,27 +84,40 @@ public class MyCSVWriterCell {
                 for (CellInfo cinfo:cells) {
                     if (cinfo instanceof CellInfoGsm) { //GSM Unterstützung
                         CellIdentityGsm cellIdentity = ((CellInfoGsm) cinfo).getCellIdentity();
+                        CellSignalStrengthGsm signalStrength = ((CellInfoGsm) cinfo).getCellSignalStrength();
+                        radio="gsm";
                         mcc = Integer.toString(cellIdentity.getMcc());
                         mnc = Integer.toString(cellIdentity.getMnc());
                         cellID = Integer.toString(cellIdentity.getCid());
                         lac = Integer.toString(cellIdentity.getLac());
+                        psc = null;
+                        signal = null; //RSSI
                         break;
                     } else if (cinfo instanceof CellInfoLte) { //LTE Unterstützung
                         CellIdentityLte cellIdentity = ((CellInfoLte) cinfo).getCellIdentity();
+                        CellSignalStrengthLte signalStrength = ((CellInfoLte) cinfo).getCellSignalStrength();
+                        radio="lte";
                         mcc = Integer.toString(cellIdentity.getMcc());
                         mnc = Integer.toString(cellIdentity.getMnc());
                         cellID = Integer.toString(cellIdentity.getCi());
                         lac = Integer.toString(cellIdentity.getTac());
+                        psc = Integer.toString(cellIdentity.getPci());
+                        signal = Integer.toString(signalStrength.getDbm()); //getRsrp()); Requires API 26 Android 8.0
                         break;
-                    } else if (cinfo instanceof CellInfoWcdma) { //WCDMA Unterstützung
+                    } else if (cinfo instanceof CellInfoWcdma) { //UMTS Unterstützung
                         CellIdentityWcdma cellIdentity = ((CellInfoWcdma) cinfo).getCellIdentity();
+                        CellSignalStrengthWcdma signalStrength = ((CellInfoWcdma) cinfo).getCellSignalStrength();
+                        radio = "umts";
                         mcc = Integer.toString(cellIdentity.getMcc());
                         mnc = Integer.toString(cellIdentity.getMnc());
                         cellID = Integer.toString(cellIdentity.getCid());
                         lac = Integer.toString(cellIdentity.getLac());
+                        psc = Integer.toString(cellIdentity.getPsc());
+                        signal = null;
                         break;
                     }
                     else{
+                        radio = "cdma";
                         mcc = cinfo.toString(); //Keine CDMA Unterstützung
                         mnc = "CDMA Cell";
                     }
@@ -107,11 +126,13 @@ public class MyCSVWriterCell {
 
             }
             else{
+                radio = "No Cellinfo found";
                 mcc = "No Cellinfo found";
                 mnc = "No Cellinfo found";
             }
         }
         catch(Exception ex) {
+            radio = "No Permission";
             mcc = "No Permission";
             mnc = "No Permission";
         }
@@ -133,10 +154,10 @@ public class MyCSVWriterCell {
                 writer = new CSVWriter(myFileWriter, ',', CSVWriter.NO_QUOTE_CHARACTER,CSVWriter.NO_ESCAPE_CHARACTER,CSVWriter.DEFAULT_LINE_END); // Komma trennt Dateieinträge
             } else { // Datei wird erstellt
                 writer = new CSVWriter(new java.io.FileWriter(filePath), ',', CSVWriter.NO_QUOTE_CHARACTER, CSVWriter.NO_ESCAPE_CHARACTER,CSVWriter.DEFAULT_LINE_END); // Komma trennt Dateieinträge
-                String[] header = {"Datum und Uhrzeit", "Dienst", "Richtung", "MCC", "MNC", "LAC", "CellID"};
+                String[] header = {"Datum und Uhrzeit", "Dienst", "Richtung", "MCC", "MNC", "Radio", "LAC", "CellID", "PSC", "Signal"};
                 writer.writeNext(header); // Schreibe Header der Datei
             }
-            String[] data = {time, service, type, mcc, mnc, lac, cellID};
+            String[] data = {time, service, type, mcc, mnc, radio, lac, cellID, psc, signal};
             writer.writeNext(data); // Schreibe alle Angaben in die Datei
             writer.close();
 
